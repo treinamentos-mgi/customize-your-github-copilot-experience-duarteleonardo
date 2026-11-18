@@ -72,6 +72,25 @@
           "type": "python"
         }
       ]
+    },
+    {
+      "id": "statistics-with-python",
+      "title": "Statistics with Python",
+      "description": "Compare mean and median with an outlier and visualize score distributions with a histogram.",
+      "path": "assignments/statistics-with-python",
+      "dueDate": "2026-11-25",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        },
+        {
+          "name": "Sample Dataset",
+          "file": "data.csv",
+          "type": "csv"
+        }
+      ]
     }
   ]
 }
