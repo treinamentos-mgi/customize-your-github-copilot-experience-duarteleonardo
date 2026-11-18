@@ -1,40 +1,33 @@
-# 📘 Atividade: Personalize sua experiência com o GitHub Copilot
+<div align="center">
 
-## 🎯 Objetivo
+# 🎉 Congratulations duarteleonardosales! 🎉
 
-Configure instruções específicas para que o GitHub Copilot entenda o contexto deste projeto e gere conteúdo educacional de acordo com sua estrutura e seus padrões.
+<img src="https://octodex.github.com/images/welcometocat.png" height="200px" />
 
-## 📝 Tarefas
+### 🌟 You've successfully completed the exercise! 🌟
 
-### 🛠️ Defina as instruções do repositório
+## 🚀 Share Your Success!
 
-#### Descrição
+**Show off your new skills and inspire others!**
 
-Revise `.github/copilot-instructions.md` e personalize as orientações para que o Copilot ajude a criar e manter atividades de programação neste projeto.
+<a href="https://twitter.com/intent/tweet?text=I%20just%20completed%20the%20%22Personalize%20Sua%20Experi%C3%AAncia%20com%20o%20GitHub%20Copilot%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Ftreinamentos-mgi%2Fcustomize-your-github-copilot-experience-duarteleonardo%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Share%20on%20X-1da1f2?style=for-the-badge&logo=x&logoColor=white" alt="Share on X" />
+</a>
+<a href="https://bsky.app/intent/compose?text=I%20just%20completed%20the%20%22Personalize%20Sua%20Experi%C3%AAncia%20com%20o%20GitHub%20Copilot%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Ftreinamentos-mgi%2Fcustomize-your-github-copilot-experience-duarteleonardo%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Share%20on%20Bluesky-0085ff?style=for-the-badge&logo=bluesky&logoColor=white" alt="Share on Bluesky" />
+</a>
+<a href="https://www.linkedin.com/feed/?shareActive=true&text=I%20just%20completed%20the%20%22Personalize%20Sua%20Experi%C3%AAncia%20com%20o%20GitHub%20Copilot%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Ftreinamentos-mgi%2Fcustomize-your-github-copilot-experience-duarteleonardo%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Share%20on%20LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Share on LinkedIn" />
+</a>
 
-#### Requisitos
+### 🎯 What's Next?
 
-As instruções devem:
+**Keep the momentum going!**
 
-- Explicar que o projeto é um portal educacional com atividades de programação.
-- Descrever a organização das atividades, dos templates e dos recursos do site.
-- Orientar o Copilot a produzir conteúdo claro, adequado ao nível dos alunos e com objetivos de aprendizagem definidos.
-- Pedir que novas atividades sigam a estrutura de [`templates/assignment-template.md`](templates/assignment-template.md).
+[![](https://img.shields.io/badge/Return%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/treinamentos-mgi/customize-your-github-copilot-experience-duarteleonardo/issues/1)
+[![GitHub Skills](https://img.shields.io/badge/Explore%20GitHub%20Skills-000000?style=for-the-badge&logo=github&logoColor=white)](https://learn.github.com/skills)
 
-### 🛠️ Teste as instruções com uma atividade
+*There's no better way to learn than building things!* 🚀
 
-#### Descrição
-
-Use o Copilot para criar ou revisar o README de uma atividade em `assignments/` e avalie se o resultado respeita as instruções que você definiu.
-
-#### Requisitos
-
-A atividade deve:
-
-- Ter um objetivo de aprendizagem claro e tarefas com descrições e requisitos verificáveis.
-- Seguir a estrutura do template do projeto.
-- Usar nomes de arquivo permitidos para atividades: `README.md`, `starter-code.py` e, quando necessário, `data.csv`.
-- Ser revisada por você para corrigir qualquer divergência em relação às instruções.
-
-[Abra o exercício no GitHub](https://github.com/treinamentos-mgi/customize-your-github-copilot-experience-duarteleonardo/issues/1).
+</div>
 
