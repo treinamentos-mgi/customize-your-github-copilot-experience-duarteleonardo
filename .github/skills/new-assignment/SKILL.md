@@ -1,26 +1,41 @@
 ---
 name: new-assignment
-description: "Use ao criar uma nova tarefa de programação para o portal, incluindo README, código inicial e materiais de apoio seguindo os padrões do projeto."
+description: "Crie uma nova assignment de programação para estudantes da Mergington High School. Use esta skill sempre que o usuário quiser criar, adicionar, estruturar ou gerar uma nova assignment, exercício ou homework, mesmo que não use explicitamente a palavra \"assignment\"."
 ---
 
-# Criar uma nova tarefa
+# Criar Nova Tarefa de Programação
 
-## Quando usar
+As assignments ficam em `assignments/<id>/`, e o site lê `config.json` para exibi-las. Siga estas etapas para criar ambos.
 
-Use esta skill para planejar ou adicionar uma atividade de programação ao portal educacional.
+## Etapa 1: Coletar Requisitos
 
-## Procedimento
+Se o usuário não tiver especificado, pergunte qual conceito de programação a assignment deve abordar.
 
-1. Leia `templates/assignment-template.md`, `.github/instructions/assignments.instructions.md` e uma ou mais tarefas existentes para seguir a estrutura e o nível de detalhe do projeto.
-2. Defina um nome curto para a atividade e use-o como slug da pasta em `assignments/<slug>/`.
-3. Crie `assignments/<slug>/README.md` com os títulos do template, sem traduzir ou omitir cabeçalhos:
-   - `# 📘 Atividade: [Título da Atividade]`
-   - `## 🎯 Objetivo`
-   - `## 📝 Tarefas`
-   - Para cada tarefa, `### 🛠️ [Título da Tarefa]`, `#### Descrição` e `#### Requisitos`.
-4. Escreva objetivos de aprendizagem claros e requisitos concretos, verificáveis e apropriados ao nível dos alunos. Use linguagem simples e encorajadora.
-5. Adicione `starter-code.py` quando a atividade precisar de código inicial e `data.csv` quando precisar de um conjunto de dados. Em `assignments/`, use somente `README.md`, `starter-code.py` e `data.csv`.
-6. Atualize `config.json` para que a atividade apareça no portal. Inclua título, descrição, caminho, prazo quando aplicável e metadados dos anexos existentes.
-7. Confira os caminhos, os nomes dos arquivos e a consistência entre o README, os anexos e `config.json`.
+> 📖 Leia [references/assignment-guide.md](references/assignment-guide.md) para orientações sobre dificuldade, escopo e quando incluir starter code.
 
-Não inclua seções extras no README nem crie arquivos de solução, a menos que o usuário peça explicitamente.
+## Etapa 2: Criar a Assignment
+
+1. Crie `assignments/<kebab-case-id>/README.md` seguindo o [assignment template](../../../templates/assignment-template.md)
+2. (Opcional) Adicione starter code ou arquivos de dados no mesmo diretório
+
+## Etapa 3: Registrar no Website
+
+Use os scripts incluídos; NÃO edite `config.json` manualmente.
+
+**Registrar a assignment:**
+
+```bash
+node .github/skills/new-assignment/scripts/update-config.js <id> "<title>" "<description>"
+```
+
+**Registrar cada arquivo como attachment** (starter code, arquivos de dados etc.):
+
+```bash
+node .github/skills/new-assignment/scripts/add-attachment.js <id> "<display-name>" <filename> <type>
+```
+
+Tipos comuns: `python`, `csv`, `json`, `txt`, `html`
+
+## Etapa 4: Verificar
+
+Confirme que a assignment foi registrada corretamente: verifique se `config.json` contém a nova entrada e se todos os arquivos criados existem no disco.
