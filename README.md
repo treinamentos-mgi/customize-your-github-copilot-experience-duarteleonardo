@@ -1,12 +1,12 @@
-# Atividade: Personalize sua experiência com o GitHub Copilot
+# 📘 Atividade: Personalize sua experiência com o GitHub Copilot
 
-## Objetivo
+## 🎯 Objetivo
 
 Configure instruções específicas para que o GitHub Copilot entenda o contexto deste projeto e gere conteúdo educacional de acordo com sua estrutura e seus padrões.
 
-## Tarefas
+## 📝 Tarefas
 
-### Defina as instruções do repositório
+### 🛠️ Defina as instruções do repositório
 
 #### Descrição
 
@@ -21,7 +21,7 @@ As instruções devem:
 - Orientar o Copilot a produzir conteúdo claro, adequado ao nível dos alunos e com objetivos de aprendizagem definidos.
 - Pedir que novas atividades sigam a estrutura de [`templates/assignment-template.md`](templates/assignment-template.md).
 
-### Teste as instruções com uma atividade
+### 🛠️ Teste as instruções com uma atividade
 
 #### Descrição
 
@@ -35,8 +35,6 @@ A atividade deve:
 - Seguir a estrutura do template do projeto.
 - Usar nomes de arquivo permitidos para atividades: `README.md`, `starter-code.py` e, quando necessário, `data.csv`.
 - Ser revisada por você para corrigir qualquer divergência em relação às instruções.
-
-## Acessar o exercício
 
 [Abra o exercício no GitHub](https://github.com/treinamentos-mgi/customize-your-github-copilot-experience-duarteleonardo/issues/1).
 
