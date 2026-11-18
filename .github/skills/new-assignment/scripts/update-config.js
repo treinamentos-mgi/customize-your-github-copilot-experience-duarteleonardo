@@ -49,14 +49,19 @@ function main() {
     throw new Error(`A assignment '${id}' já está registrada em config.json.`);
   }
 
+  const dueDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
+    .toISOString()
+    .split("T")[0];
+
   config.assignments.push({
     id,
     title: title.trim(),
     description: description.trim(),
     path: `assignments/${id}`,
+    dueDate,
   });
   saveConfig(config);
-  console.log(`Assignment '${id}' registrada em config.json.`);
+  console.log(`Added "${title}" (due ${dueDate})`);
 }
 
 try {

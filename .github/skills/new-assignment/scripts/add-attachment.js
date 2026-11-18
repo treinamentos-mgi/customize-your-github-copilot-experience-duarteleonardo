@@ -47,7 +47,10 @@ function main() {
 
   const assignment = config.assignments.find((entry) => entry.id === id);
   if (!assignment) {
-    throw new Error(`A assignment '${id}' não está registrada em config.json.`);
+    const availableIds = config.assignments.map((entry) => entry.id).join(", ");
+    throw new Error(
+      `Assignment "${id}" not found in config.json. Available IDs: ${availableIds}`,
+    );
   }
 
   const expectedDirectory = path.resolve(assignmentsRoot, id);
@@ -74,7 +77,8 @@ function main() {
     throw new Error(`A lista de anexos da assignment '${id}' não é válida.`);
   }
   if (assignment.attachments.some((attachment) => attachment.file === filename)) {
-    throw new Error(`O arquivo '${filename}' já está registrado como anexo.`);
+    console.log(`Skipped: "${filename}" is already attached to "${id}"`);
+    return;
   }
 
   assignment.attachments.push({
@@ -83,7 +87,7 @@ function main() {
     type: type.toLowerCase(),
   });
   saveConfig(config);
-  console.log(`Anexo '${filename}' registrado na assignment '${id}'.`);
+  console.log(`Added "${name}" (${filename}) to assignment "${id}"`);
 }
 
 try {
