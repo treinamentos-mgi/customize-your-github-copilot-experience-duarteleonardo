@@ -64,6 +64,9 @@ function main() {
   if (!filePath.startsWith(`${assignmentDirectory}${path.sep}`)) {
     throw new Error("O arquivo precisa estar dentro da pasta da assignment.");
   }
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`File not found: assignments/${id}/${filename}`);
+  }
   const realFilePath = fs.realpathSync(filePath);
   if (!realFilePath.startsWith(`${assignmentDirectory}${path.sep}`)) {
     throw new Error("O arquivo precisa estar dentro da pasta da assignment.");
